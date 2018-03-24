@@ -1,0 +1,10 @@
+<div class="visitante">
+  <div class="marcador-vis">
+    <p class="digitos">{{dobleDigito}}</p>
+    <p>Houston Rockets</p>
+    <img src="assets/Houston_Rockets.svg" alt="Logo Rockets">
+  </div>
+  <app-jugadores-visitante [jugadores]="jugadores" 
+                         (canasta)="recibePuntos($event)">
+  </app-jugadores-visitante>
+</div>

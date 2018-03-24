@@ -1,0 +1,10 @@
+<div class="local">
+  <div class="marcador-loc">
+    <img src="assets/San_Antonio_Spurs.svg" alt="Spurs logo">
+    <p>San Antonio Spurs</p>
+    <p class="digitos">{{dobleDigito}}</p>
+  </div>
+  <app-jugadores-local [jugadores]="jugadores" 
+                       (canasta)="recibePuntos($event)">
+  </app-jugadores-local>
+</div>
